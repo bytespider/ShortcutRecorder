@@ -12,21 +12,21 @@ The only user interface control to record shortcuts. For Mac OS X 10.6+, 64bit.
 - Revised codebase with Automatic Reference Counting support
 - Translated into 24 languages
 
-Includes framework to set global shortcuts (PTHotKey).
-
 Take a look at [the demo](https://github.com/Kentzo/ShortcutRecorderDemo).
+
+This is a stripped down version of https://github.com/Kentzo/ShortcutRecorder, as I didn't like having PTHotKey included.
 
 Get Sources
 -----------
 The preferred way to add the ShortcutRecorder to your project is to use git submodules:  
-`git submodule add git://github.com/Kentzo/ShortcutRecorder.git`
+`git submodule add git://github.com/Bytespider/ShortcutRecorder.git`
 You can download sources from the site as well.
 
 Integrate into your project
 ---------------------------
 First, add ShortcutRecorder.xcodeproj to your workspace via Xcode ([Apple docs](http://developer.apple.com/library/ios/#recipes/xcode_help-structure_navigator/articles/adding_a_project_to_a_workspace.html)). Don't have a workspace? No problem, just add ShortcutRecorder.xcodeproj via the "Add Files to" dialog.
 
-Next step is to ensure your target is linked against the ShortcutRecorder or/and PTHotKey frameworks ([Apple docs](http://developer.apple.com/library/ios/#recipes/xcode_help-project_editor/Articles/AddingaLibrarytoaTarget.html#//apple_ref/doc/uid/TP40010155-CH17)). Desired frameworks will be listed under *Workspace*.
+Next step is to ensure your target is linked against the ShortcutRecorder framework ([Apple docs](http://developer.apple.com/library/ios/#recipes/xcode_help-project_editor/Articles/AddingaLibrarytoaTarget.html#//apple_ref/doc/uid/TP40010155-CH17)). Desired frameworks will be listed under *Workspace*.
 
 Now it's time to make frameworks part of your app. To do this, you need to add custom Build Phase ([Apple docs](http://developer.apple.com/library/ios/#recipes/xcode_help-project_editor/Articles/CreatingaCopyFilesBuildPhase.html)). Remember to set *Destination* to *Frameworks* and clean up *Subpath*.
 
@@ -40,4 +40,4 @@ SRRecorderControl has fixed height of 25 points so ensure you do not use autores
 
 Questions
 ---------
-Still have questions about how to use it? [Create an issue](https://github.com/Kentzo/ShortcutRecorder/issues/new) immediately and feel free to ping me.
+Still have questions about how to use it? [Create an issue](https://github.com/Bytespider/ShortcutRecorder/issues/new) immediately and feel free to ping me.
